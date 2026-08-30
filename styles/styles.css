@@ -45,8 +45,7 @@ h1 {
 .projects-main {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 50px;
     padding: 50px 50px;
 }
@@ -104,6 +103,18 @@ h1 {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 0;
+}
+
+a.card {
+    text-decoration: none;
+    color: inherit;
 }
 
 
